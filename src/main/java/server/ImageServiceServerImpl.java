@@ -17,6 +17,7 @@ public class ImageServiceServerImpl extends UnicastRemoteObject implements Image
 
     @Override
     public byte[] processImage(byte[] image) throws IOException {
+        System.out.println("success");
         return new byte[0];
     }
 
