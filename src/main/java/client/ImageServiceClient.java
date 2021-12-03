@@ -25,9 +25,9 @@ public class ImageServiceClient {
 
         ImageServiceServer imageServiceServer = (ImageServiceServer) Naming.lookup(objectName);
 
-        //byte[] processedImage = imageServiceServer.processImage(imageBytes);
+        byte[] processedImage = imageServiceServer.processImage(imageBytes);
 
-        return imageBytes;
+        return processedImage;
     }
 
     public static void writeImageToFile(byte[] image, String outputImagePath) throws IOException {
